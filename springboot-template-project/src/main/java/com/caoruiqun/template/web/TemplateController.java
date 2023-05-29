@@ -25,6 +25,11 @@ public class TemplateController {
     @Autowired
     private TemplateService templateService;
 
+    @GetMapping("/health")
+    public ResponseResult health() {
+        return ResponseResultBuilder.buildSuccessResult();
+    }
+
     @GetMapping("/templateFindAll")
     public ResponseResult templateFindAll() {
         List<UserInfo> userInfoList = templateService.templateFindAll();
