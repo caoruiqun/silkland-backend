@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      # Nacos 作为注册中心的配置项，对应 NacosDiscoveryProperties 配置类
+      discovery:
+        server-addr: 127.0.0.1:8858 # Nacos 服务器地址
+        namespace: 4011a533-858e-480f-8f0f-9228a638cf57 # Nacos 命名空间 dev 的编号

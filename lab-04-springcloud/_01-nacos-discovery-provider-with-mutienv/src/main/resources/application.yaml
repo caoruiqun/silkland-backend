@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: mutienv-provider # Spring 应用名
+  profiles:
+    active: dev
+
+server:
+  port: 18080 # 服务器端口。默认为 8080
