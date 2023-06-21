@@ -1,16 +1,16 @@
 package com.caoruiqun.mybatis.mapper;
 
 import com.caoruiqun.mybatis.Application;
-import com.caoruiqun.mybatis.entity.UserDO;
+import com.caoruiqun.mybatis.entity.User;
+import com.caoruiqun.mybatis.util.IdWorkerUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+import java.time.LocalDateTime;
 
+@Slf4j
 @SpringBootTest(classes = Application.class)
 public class UserMapperTest {
 
@@ -18,39 +18,24 @@ public class UserMapperTest {
     private UserMapper userMapper;
 
     @Test
-    public void testInsert() {
-        UserDO user = new UserDO().setUsername(UUID.randomUUID().toString())
-                .setPassword("nicai").setCreateTime(new Date());
-        userMapper.insert(user);
-        System.out.println(user.getId());
+    public void test00() {
+
     }
 
     @Test
-    public void testUpdateById() {
-        UserDO updateUser = new UserDO().setId(16)
-                .setPassword("注解xxx2");
-        userMapper.updateById(updateUser);
-    }
+    public void test01() {
+        Long id = IdWorkerUtil.getNextId();
+//        Integer id = Integer.parseInt(String.valueOf(nextId));
 
-    @Test
-    public void testDeleteById() {
-        userMapper.deleteById(2);
-    }
+        User userDO = new User();
+        userDO.setName("jack1")
+                .setAge(21)
+                .setCreateTime(LocalDateTime.now())
+                .setId(id);
+        int count = userMapper.insertOne(userDO);
+        log.debug("userMapper.insertOne: {}", count);
 
-    @Test
-    public void testSelectById() {
-        userMapper.selectById(1);
+//        Integer id = userDO.getId();
+        System.out.println("id = " + id);
     }
-
-    @Test
-    public void testSelectByUsername() {
-        userMapper.selectByUsername("yunai");
-    }
-
-    @Test
-    public void testSelectByIds() {
-        List<UserDO> users = userMapper.selectByIds(Arrays.asList(1, 3));
-        System.out.println("users：" + users.size());
-    }
-
 }
