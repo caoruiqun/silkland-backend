@@ -1,6 +1,7 @@
-package com.caoruiqun.mybatis;
+package com.caoruiqun.mybatis.mapper;
 
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
+import com.caoruiqun.mybatis.Application;
 import com.caoruiqun.mybatis.common.util.IdentifierUtils;
 import com.caoruiqun.mybatis.entity.ThirdPartyUser;
 import com.caoruiqun.mybatis.mapper.ThirdPartyUserMapper;

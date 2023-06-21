@@ -1,7 +1,7 @@
-package org.mybatisplus.generator.service;
+package com.caoruiqun.mybatis.service;
 
-import org.mybatisplus.generator.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.caoruiqun.mybatis.entity.User;
 
 /**
  * <p>

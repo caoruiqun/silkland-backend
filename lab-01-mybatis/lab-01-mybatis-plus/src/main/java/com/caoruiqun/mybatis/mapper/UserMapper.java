@@ -1,7 +1,7 @@
-package org.mybatisplus.generator.mapper;
+package com.caoruiqun.mybatis.mapper;
 
-import org.mybatisplus.generator.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.caoruiqun.mybatis.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

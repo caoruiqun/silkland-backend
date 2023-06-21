@@ -1,4 +1,4 @@
-package org.mybatisplus.generator.controller;
+package com.caoruiqun.mybatis.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

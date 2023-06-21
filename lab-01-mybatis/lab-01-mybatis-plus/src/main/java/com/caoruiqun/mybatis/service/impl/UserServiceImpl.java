@@ -1,9 +1,9 @@
-package org.mybatisplus.generator.service.impl;
+package com.caoruiqun.mybatis.service.impl;
 
-import org.mybatisplus.generator.entity.User;
-import org.mybatisplus.generator.mapper.UserMapper;
-import org.mybatisplus.generator.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.caoruiqun.mybatis.entity.User;
+import com.caoruiqun.mybatis.mapper.UserMapper;
+import com.caoruiqun.mybatis.service.UserService;
 import org.springframework.stereotype.Service;
 
 /**
