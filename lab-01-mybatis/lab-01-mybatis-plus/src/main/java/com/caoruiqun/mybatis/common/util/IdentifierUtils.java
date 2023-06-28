@@ -15,5 +15,8 @@ public class IdentifierUtils {
         return String.valueOf(defaultIdentifierGenerator.nextId(null));
     }
 
+    public static Long getNextIdOfNumber(){
+        return defaultIdentifierGenerator.nextId(null);
+    }
 
 }

@@ -1,4 +1,4 @@
-package com.caoruiqun.mybatis.util;
+package com.caoruiqun.mybatis.util.id;
 
 import java.net.InetAddress;
 

@@ -31,7 +31,7 @@ public class User implements Serializable {
      * 主键ID
      */
     @TableId(value = "ID", type = IdType.AUTO)
-    private Integer id;
+    private Long id;
 
     /**
      * 姓名
@@ -61,7 +61,7 @@ public class User implements Serializable {
      * 是否删除
      */
     @TableField("DELETED")
-    @TableLogic
+//    @TableLogic
     private Integer deleted;
 
     /**

@@ -51,9 +51,9 @@ public class CodeGenerator {
                 //策略配置
                 .strategyConfig(builder -> {
 //                    builder.addInclude("tbl_employee","tbl_dept")
-                    builder.addInclude("sys_banner") // 设置需要生成的表名
+                    builder.addInclude("sys_f_sort_scheme") // 设置需要生成的表名
 //                            .addTablePrefix("t_", "c_")
-                            .addTablePrefix("sys_")// 设置过滤表前缀
+                            .addTablePrefix("sys_f_")// 设置过滤表前缀
                             .serviceBuilder() //开启service策略配置
                             .formatServiceFileName("%sService") //取消Service前的I
                             .mapperBuilder()
