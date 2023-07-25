@@ -1,4 +1,4 @@
-package com.caoruiqun.template.testmain;
+package com.caoruiqun.template.testmain.modelmapper;
 
 import com.alibaba.fastjson2.JSON;
 import com.caoruiqun.template.model.modelmapper.*;
