@@ -10,11 +10,11 @@
   </parent>
 
   <groupId>com.caoruiqun</groupId>
-  <artifactId>lab06-kafka</artifactId>
+  <artifactId>lab-06-kafka</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>lab06-kafka</name>
+  <name>lab-06-kafka</name>
   <url>http://maven.apache.org</url>
 
   <properties>
