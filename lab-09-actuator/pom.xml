@@ -17,7 +17,6 @@
         <module>lab-09-actuator-demo-auditevents</module>
         <module>lab-09-actuator-demo-custom-endpoint</module>
         <module>lab-09-actuator-demo-security</module>
-        <module>lab-09-actuator-test</module>
     </modules>
 
 </project>
